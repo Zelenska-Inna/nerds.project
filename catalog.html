@@ -9,7 +9,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
     <header class="main-header">
         <nav class="main-navigation">
@@ -23,20 +22,20 @@
                 <li><a href="">контакты</a></li>
             </ul>
             <ul class="user-basket">
-                <li><a ref="">корзина</a></li>
+                <li><a href="">корзина</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
         <h1>Магазин готовых шаблонов</h1>
-        <section class="filters">
-            <h3 class="title">сетка:</h3>
+        <aside class="filters">
+            <h2 class="title">сетка:</h2>
             <ul>
                 <li>Адаптивная</li>
                 <li>Фиксированная</li>
                 <li>Резиновая</li>
             </ul>
-            <h3 class="title">особенности:</h3>
+            <h2 class="title">особенности:</h2>
             <ul>
                 <li>Слайдер</li>
                 <li>Блок преимуществ</li>
@@ -44,42 +43,78 @@
                 <li>Галерея</li>
                 <li>Корзина</li>
             </ul>
-        </section>
-        <section class="our--templates">
-            <ul class="our--templates__list">
-                <li class="our--templates__item"><a href=""><img src="" alt="Sedona"></a></li>
-                <li class="our--templates__item"><a href=""><img src="" alt="Pink"></a></li>
-                <li class="our--templates__item"><a href=""><img src="" alt="Borodinski"></a></li>
-                <li class="our--templates__item"><a href=""><img src="" alt="Mishka"></a></li>
-                <li class="our--templates__item"><a href=""><img src="" alt="Education"></a></li>
-                <li class="our--templates__item"><a href=""><img src="" alt="Kvast"></a></li>
+        </aside>
+        <section class="our-templates">
+            <ul class="our-templates-list">
+                <li class="our-templates-item"><a href=""><img src="" alt="Sedona"></a>
+                    <div class="description visual-hidden">
+                        <h3 class="title">Sedona</h3>
+                        <p>Информационный сайт для туристов</p>
+                        <button class="our-price">9 900 руб.</button>
+                    </div>
+                </li>
+                <li class="our-templates-item"><a href=""><img src="" alt="Pink"></a>
+                    <div class="description visual-hidden">
+                        <h3 class="title">Pink</h3>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <button class="our-price">9 900 руб.</button>
+                    </div>
+                </li>
+                <li class="our-templates-item"><a href=""><img src="" alt="Borodinski"></a>
+                    <div class="description visual-hidden">
+                        <h3 class="title">Borodinski</h3>
+                        <p>Сайт салона красоты. Для мужчин, да.</p>
+                        <button class="our-price">9 900 руб.</button>
+                    </div>
+                </li>
+                <li class="our-templates-item"><a href=""><img src="" alt="Mishka"></a>
+                     <div class="description visual-hidden">
+                         <h3 class="title">Mishka</h3>
+                         <p>Интернет-магазин вязаных игрушек</p>
+                         <button class="our-price">9 900 руб.</button>
+                     </div>
+                </li>
+                <li class="our-templates-item"><a href=""><img src="" alt="A Plus"></a>
+                     <div class="description visual-hidden">
+                         <h3 class="title">A Plus</h3>
+                         <p>Лендинг курсов повышения квалификациив</p>
+                         <button class="our-price">9 900 руб.</button>
+                     </div>
+                </li>
+                <li class="our-templates-item"><a href=""><img src="" alt="Kvast"></a>
+                     <div class="description visual-hidden">
+                         <h3 class="title">Kvast</h3>
+                         <p>Промо-сайт производителя крафтового кваса</p>
+                         <button class="our-price">9 900 руб.</button>
+                     </div>
+                </li>
             </ul>
         </section>
     </main>
-    <footer class="main--footer">
-        <section class="our--map">
-            <div class="our--contacts">
+    <footer class="main-footer">
+        <section class="our-map">
+            <div class="our-contacts">
+                <h3>nerds design studio</h3>
                 <ul>
-                    <li>NЁRDS DESIGN STUDIO</li>
-                    <li>191186, Санкт-Петербург,</li>
-                    <li>ул. Б. Конюшенная, д. 19/8</li>
-                    <li>тел. +7 (812)275-75-75</li>
+                    <li class="our-contacts-list">191186, Санкт-Петербург,</li>
+                    <li class="our-contacts-list">ул. Б. Конюшенная, д. 19/8</li>
+                    <li class="our-contacts-list">тел. +7 (812)275-75-75</li>
                 </ul>
-                <button class="write--us">
+                <button class="write-us">Напишите нам
                 </button>
             </div>
-            <img class="map--img" src="" alt="карта">
-            <section>
-                <form class="visual-hidden">
-                    <span class="modal-close"></span>
-                </form>
-            </section>
+            <img class="map-img" src="" alt="карта">
         </section>
-        <div class="footer--social">
+        <section>
+            <form class="visual-hidden">
+                <button type="button" class="modal-close"></button> <!--закрыть окно-->
+            </form>
+        </section>
+        <div class="footer-social">
             <ul>
-                <li><a class="socail--button" href="#"> Вконтакте</a></li>
-                <li><a class="socail--button" href="#">Фейсбук</a></li>
-                <li><a class="socail--button" href="#">Инстаграм</a></li>
+                <li><a class="socail-button" href="#">Вконтакте</a></li>
+                <li><a class="socail-button" href="#">Фейсбук</a></li>
+                <li><a class="socail-button" href="#">Инстаграм</a></li>
             </ul>
         </div>
         <h2>Давайте дружить, это выгодно!</h2>
