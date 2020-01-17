@@ -25,3 +25,10 @@ a {
     list-style: none;
 }
 /* text-transform: uppercase;*/
+.project-details {
+    display: none;
+}
+
+.project-details :hover {
+    display: block;
+}
