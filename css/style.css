@@ -28,7 +28,7 @@ a {
 .project-details {
     display: none;
 }
-
+/*для блока який вспливає при наваедені catalog*/
 .project-details :hover {
     display: block;
 }
