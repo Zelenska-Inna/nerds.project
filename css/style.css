@@ -12,18 +12,111 @@ body {
     background-position: top center;
 }
 a {
-    text-decoration: none;
+    text-decoration: none; /* убираем подчоркивание*/
+    text-transform: uppercase;  /* все ссылки большыми буквами*/
 }
 .main-navigation{
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
+    /* text-transform: uppercase; */
 
     background-color: #eeeeee;
 }
 .site-navigation {
     list-style: none;
 }
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-basket a:hover,
+.user-basket a:focus{
+    color: #fb565a;
+}
+.site-navigation a:active,
+.user-basket a:active {
+    color: #a6a6a6;
+}
+/* подчеркивание*/
+.active-link{ 
+    border-bottom: #fb565a 2px solid;
+}
+/* изменение состояния лого*/
+.header-logo:active {
+    stroke: #a6a6a6;
+    fill: #a6a6a6;
+
+}
+/* загаловки*/
+.tagline {
+    font-size: 55px;
+    line-height: 55px;
+}
+.about-us-headline {
+    font-size: 45px;
+    line-height: 45px;
+}
+/*кнопки похожие на ссылки*/
+.more-info,
+.button-order {
+    line-height: 18px;
+    color: #ffffff;
+    background-color:#fb565a;
+}
+.more-info:hover,
+.button-order:hover,
+.more-info:focus,
+.button-order:focus {
+    background-color: #e74246;
+}
+
+.more-info:active,
+.button-order:active {
+    color: #e37376;
+    background-color: #d7373b;
+}
+.button-order-2{
+    color: #ffffff;
+    background-color: #00ca74;
+}
+.button-order-2:hover,
+.button-order-2:focus{
+    background-color: #00bc6c;
+}
+.button-order-2:active {
+    color:#4dc491;
+    background-color: #00bc6c;
+}
+.button-order-3 {
+    color: #ffffff;
+    background-color: #efc84a;
+}
+.button-order-3:hover,
+.button-order-3:focus {
+    background-color: #eab534;
+}
+.button-order-3:active{
+    color: #edc265;
+    background-color: #e5a722;
+}
+/*кнопки*/
+.write-us,
+.send-us {
+    color: #ffffff;
+    text-transform: uppercase;
+    font: inherit;
+    background-color:#fb565a;
+    border: none;
+}
+
+/* изменение состояния логотипов*/
+.our-projects-img {
+
+}
+.our-projects-img:hover,
+.our-projects-img:focus {
+
+}
+
 /* text-transform: uppercase;*/
 .project-details {
     display: none;
@@ -31,4 +124,32 @@ a {
 /*для блока який вспливає при наваедені catalog*/
 .project-details :hover {
     display: block;
+}
+.text{
+    color:#283136
+
+}
+/*каталог*/
+.show-button,
+.page-number {
+    font: inherit;
+    text-transform: uppercase;
+    line-height: 18px;
+    background-color: #eeeeee;
+
+}
+.show-button :hover,
+.show-button :focus,
+.page-number :hover,
+.page-number :focus {
+    background-color: #dfdfdf;
+}
+.show-button :active
+.page-number :active {
+    color: #959595;
+    background-color: #c4b7b7;
+}
+/*форма обратной связи*/
+.get-info{
+    font: inherit;
 }
