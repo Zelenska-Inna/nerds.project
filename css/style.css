@@ -5,7 +5,7 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
     color: #000000;
 
     background-color: #ffffff;
@@ -46,14 +46,13 @@ a {
     fill: #a6a6a6;
 
 }
-/* загаловки*/
+/* загаловок*/
 .tagline {
     font-size: 55px;
     line-height: 55px;
 }
-.about-us-headline {
-    font-size: 45px;
-    line-height: 45px;
+.text {
+    color: #283136;
 }
 /*кнопки похожие на ссылки*/
 .more-info,
@@ -98,15 +97,51 @@ a {
     color: #edc265;
     background-color: #e5a722;
 }
-/*кнопки*/
+/*о нас*/
+.about-us-headline {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+}
+.about-us-text,
+.item {
+    color: #283136;
+    font-size: 16px;
+    line-height: 24px;
+}
+.about-us-subtitle{
+    text-transform: uppercase;
+}
+.article-subtitle{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.article-item span {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+}
+.article-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+/*кнопки */
 .write-us,
 .send-us {
-    color: #ffffff;
-    text-transform: uppercase;
     font: inherit;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+
+    color: #ffffff;
     background-color:#fb565a;
     border: none;
 }
+
+
 
 /* изменение состояния логотипов*/
 .our-projects-img {
@@ -117,7 +152,6 @@ a {
 
 }
 
-/* text-transform: uppercase;*/
 .project-details {
     display: none;
 }
@@ -126,7 +160,7 @@ a {
     display: block;
 }
 .text{
-    color:#283136
+    color:#283136;
 
 }
 /*каталог*/
@@ -149,7 +183,108 @@ a {
     color: #959595;
     background-color: #c4b7b7;
 }
-/*форма обратной связи*/
-.get-info{
-    font: inherit;
+/*сортировка*/
+.sort{
+    color: #dadada;
 }
+.sort :hover,
+.sort :focus {
+    color: #8d8d8d;
+}
+.sort :active {
+    color: #000000;
+}
+/*детали проекта при наведении*/
+.project-details{
+    background-color:#eeeeee;
+}
+.title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+}
+.title :hover,
+.title :focus {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fb565a;
+}
+.title :active{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #c7c7c7;
+}
+.project-details p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+.our-price{
+    font: inherit;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+
+    color: #ffffff;
+    background-color:#fb565a;
+    border: none;
+
+}
+/*форма обратной связи*/ /*не работают hover focus в форме*/
+.write-us-form h2{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+}
+ .write-us-form label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+ }
+.get-info input {
+    font: inherit;
+    border: 2px solid #d7dcde;
+}
+.get-info input :hover{
+    border-color:#b4b9bb;
+}
+.get-info input :focus{
+    border-color: #000000;
+}
+.modal-close{
+    border:none;
+}
+
+.main-footer{
+
+}
+.our-contacts{
+    background-color: white;
+}
+.our-contacts h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+.our-contacts-list{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+.proposition {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+}
+.discounts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.
