@@ -37,7 +37,7 @@ a {
     color: #a6a6a6;
 }
 /* подчеркивание*/
-.active-link{ 
+.active-link { 
     border-bottom: #fb565a 2px solid;
 }
 /* изменение состояния лого*/
@@ -78,7 +78,7 @@ a {
     background-color: #00ca74;
 }
 .button-order-2:hover,
-.button-order-2:focus{
+.button-order-2:focus {
     background-color: #00bc6c;
 }
 .button-order-2:active {
@@ -103,16 +103,15 @@ a {
     font-size: 45px;
     line-height: 45px;
 }
-.about-us-text,
-.item {
+.about-us-description {
     color: #283136;
     font-size: 16px;
     line-height: 24px;
 }
-.about-us-subtitle{
+.about-us-subtitle {
     text-transform: uppercase;
 }
-.article-subtitle{
+.article-subtitle {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
@@ -129,8 +128,7 @@ a {
     line-height: 24px;
 }
 /*кнопки */
-.write-us,
-.send-us {
+.write-us {
     font: inherit;
     text-transform: uppercase;
     vertical-align: middle;
@@ -184,7 +182,7 @@ a {
     background-color: #c4b7b7;
 }
 /*сортировка*/
-.sort{
+.sort {
     color: #dadada;
 }
 .sort :hover,
@@ -195,26 +193,20 @@ a {
     color: #000000;
 }
 /*детали проекта при наведении*/
-.project-details{
+.project-details {
     background-color:#eeeeee;
 }
-.title{
+.filter {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
     color: #000;
 }
-.title :hover,
-.title :focus {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
+.filter :hover,
+.filter :focus {
     color: #fb565a;
 }
-.title :active{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
+.filter :active {
     color: #c7c7c7;
 }
 .project-details p {
@@ -223,7 +215,7 @@ a {
     line-height: 18px;
     color: #666666;
 }
-.our-price{
+.our-price {
     font: inherit;
     text-transform: uppercase;
     vertical-align: middle;
@@ -235,12 +227,12 @@ a {
 
 }
 /*форма обратной связи*/ /*не работают hover focus в форме*/
-.write-us-form h2{
+.write-us-form h2 {
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
 }
- .write-us-form label{
+ .write-us-form label {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -249,10 +241,10 @@ a {
     font: inherit;
     border: 2px solid #d7dcde;
 }
-.get-info input :hover{
+.get-info input :hover {
     border-color:#b4b9bb;
 }
-.get-info input :focus{
+.get-info input :focus {
     border-color: #000000;
 }
 .modal-close{
@@ -262,17 +254,16 @@ a {
 .main-footer{
 
 }
-.our-contacts{
+.our-contacts {
     background-color: white;
 }
-.our-contacts h3{
+.our-contacts h3 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-
 }
-.our-contacts-list{
+.our-contacts-list {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -287,4 +278,3 @@ a {
     font-size: 16px;
     line-height: 22px;
 }
-.
