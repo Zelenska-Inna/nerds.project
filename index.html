@@ -16,13 +16,22 @@
                 </svg>
             </a>
             <ul class="site-navigation">
-                <li><a href="">студия</a></li>
-                <li><a href="">клиенты</a></li>
+                <li><a href="index.html" class="active-link">студия</a></li>
+                <li><a href="customers.html">клиенты</a></li>
                 <li><a href="catalog.html">магазин</a></li>
-                <li><a href="">контакты</a></li>
+                <li><a href="contacts.html">контакты</a></li>
             </ul>
-            <ul class="user-basket">
-                <li><a href="">корзина</a></li>
+            <ul class="site-navigation basket">
+                <li>
+                    <a href="cart.html">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                             <circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5" />
+                             <circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5" />
+                             <path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
+                         </svg>
+                        корзина
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,17 +42,17 @@
                 <li class="slide">
                     <p class="tagline">Долго, дорого, скрупулезно.</p>
                     <p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                    <a href="" class="more-info">узнать больше</a>
+                    <a href="" class="button-main">узнать больше</a>
                 </li>
                 <li class="slide">
                     <p class="tagline">Любим математику как никто другой.</p>
                     <p class="text"> Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                    <a href="" class="more-info">узнать больше</a>
+                    <a href="" class="button-main">узнать больше</a>
                 </li>
                 <li class="slide">
                     <p class="tagline">Только ночь, только хардкор</p>
                     <p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                    <a href="" class="more-info">узнать больше</a>
+                    <a href="" class="button-main">узнать больше</a>
                 </li>
             </ul>
             <ul>
@@ -81,19 +90,19 @@
                     <img src="img/illustration-1.png" alt="Ноутбук">
                     <h3>Веб-сайты</h3>
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <a href="" class="button-order">заказать</a>
+                    <a href="" class="button-main icon-laptop">заказать</a>
                 </li>
                 <li class="service">
                     <img src="img/illustration-2.png" alt="Телефон">
                     <h3>Приложения</h3>
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <a href="" class="button-order-2">заказать</a>
+                    <a href="" class="button-main icon-phone">заказать</a>
                 </li>
                 <li class="service">
                     <img src="img/illustration-3.png" alt="Презентация">
                     <h3>Презентации</h3>
                     <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <a href="" class="button-order-3">заказать</a>
+                    <a href="" class="button-main icon-presentation">заказать</a>
                 </li>
             </ul>
         </section>
@@ -106,13 +115,13 @@
                 <li class="about-us-description">Мобильных приложений для IOS и Android</li>
                 <li class="about-us-description">Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
-            <article class="article">
-                <img src="img/nerds-illustration.png" class="article-img" alt="Нёрдс">
-                <h3 class="article-subtitle">с 2004 года любим точность во всем:</h3>
-                <ul class="article-list">
-                    <li class="article-item"><span>146%</span>Уровень самоотдачи</li>
-                    <li class="article-item"><span>100%</span>Соблюдение сроков</li>
-                    <li class="article-item"><span>50%</span>Минимальная предоплата</li>
+            <article class="quality">
+                <img src="img/nerds-illustration.png" class="quality-img" alt="Нёрдс">
+                <h3 class="quality-subtitle">с 2004 года любим точность во всем:</h3>
+                <ul class="quality-list">
+                    <li class="quality-item"><span>146<sup>%</sup></span>Уровень самоотдачи</li>
+                    <li class="quality-item"><span>100<sup>%</sup></span>Соблюдение сроков</li>
+                    <li class="quality-item"><span>50<sup>%</sup></span>Минимальная предоплата</li>
                 </ul>
             </article>
          </section>
@@ -150,7 +159,7 @@
                 </p>
                 <p class="get-info">
                     <label for="e-mail">Ваш e-mail:</label>
-                    <input id=e-mail"" type="text" placeholder="email@example.com">
+                    <input id="e-mail" type="text" placeholder="email@example.com">
                 </p>
                 <p class="get-info">
                     <label for="feedback">Текст письма:</label>
