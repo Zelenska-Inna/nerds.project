@@ -9,6 +9,7 @@
 </head>
 <body>
     <header class="main-header">
+        <div class="wrapper">
         <nav class="main-navigation">
             <a href="" class="header-logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="65" viewBox="0 0 160 65">
@@ -34,56 +35,42 @@
                 </li>
             </ul>
         </nav>
-    </header>
+        </div>
+            <section class="slider">
+                <div class="slider-container">
+                    <ul class="slider-list"> 
+                        <li class="slider-item">
+                                <h3 class="tagline">Долго, дорого, <br>скрупулезно.</h3>
+                                <p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                                <a href="" class="button-main">узнать больше</a>
+                        </li>
+                        <li class="slider-item visual-hidden">
+                                <h3 class="tagline ">Любим математику как никто другой.</h3>
+                                <p class="text"> Никакого креатива, только математические формулы для расчета идеальных
+                                    пропорций.</p>
+                                <a href="" class="button-main">узнать больше</a>
+                        </li>
+                        <li class="slider-item visual-hidden">
+                                <h3 class="tagline">Только ночь,<br> только хардкор</h3>
+                                <p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+                                    начинается.</p>
+                                <a href="" class="button-main">узнать больше</a>
+                        </li>
+                    </ul>
+                    <!--class="visual-hidden"-->
+                    <!-- <input type="radio" id="btn-1" name="toggle" checked>
+                    <input type="radio" id="btn-2" name="toggle">
+                    <input type="radio" id="btn-3" name="toggle">
+                    <div class="slider-controls">
+                        <label class="slider-controls-items" for="btn-1"></label>
+                        <label class="slider-controls-items" for="btn-2"></label>
+                        <label class="slider-controls-items" for="btn-3"></label>
+                    </div> -->
+                </div>
+            </section>
+        </header>
     <main class="container">
         <h1 class="visual-hidden">Дизайн-студия "Nerds" </h1>
-        <section class="main-slide">
-            <ul>
-                <li class="slide">
-                    <p class="tagline">Долго, дорого, скрупулезно.</p>
-                    <p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                    <a href="" class="button-main">узнать больше</a>
-                </li>
-                <li class="slide">
-                    <p class="tagline">Любим математику как никто другой.</p>
-                    <p class="text"> Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                    <a href="" class="button-main">узнать больше</a>
-                </li>
-                <li class="slide">
-                    <p class="tagline">Только ночь, только хардкор</p>
-                    <p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                    <a href="" class="button-main">узнать больше</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <button type="button" class="slider-pin">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-                            <path fill="#4D4D4D"
-                                d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z" />
-                        </svg>
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="slider-pin">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                            viewBox="0 0 25 25">
-                            <path fill="#4D4D4D"
-                                d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z" />
-                        </svg>
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="slider-pin">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                            viewBox="0 0 25 25">
-                            <path fill="#4D4D4D"
-                                d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z" />
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-        </section>
         <section class="advantages">
             <ul class="our-service">
                 <li class="service">
@@ -106,36 +93,49 @@
                 </li>
             </ul>
         </section>
-        <section class="about-us">
-            <h2 class="about-us-headline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-            <p class="about-us-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <h3 class="about-us-subtitle">выполняем заказы на разработку:</h3>
-            <ul class="about-us-list">
-                <li class="about-us-description">Веб-сайтов любой сложности</li>
-                <li class="about-us-description">Мобильных приложений для IOS и Android</li>
-                <li class="about-us-description">Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
+        <div class="about-us-wrapper">
+            <section class="about-us">
+                <h2 class="about-us-headline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+                <p class="about-us-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                <h3 class="about-us-subtitle">выполняем заказы на разработку:</h3>
+                <ul class="about-us-list">
+                    <li class="about-us-description">Веб-сайтов любой сложности</li>
+                    <li class="about-us-description">Мобильных приложений для IOS и Android</li>
+                    <li class="about-us-description">Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </section>
             <article class="quality">
                 <img src="img/nerds-illustration.png" class="quality-img" alt="Нёрдс">
                 <h3 class="quality-subtitle">с 2004 года любим точность во всем:</h3>
                 <ul class="quality-list">
-                    <li class="quality-item"><span>146<sup>%</sup></span>Уровень самоотдачи</li>
-                    <li class="quality-item"><span>100<sup>%</sup></span>Соблюдение сроков</li>
-                    <li class="quality-item"><span>50<sup>%</sup></span>Минимальная предоплата</li>
+
+                    <li class="quality-item"><span>146
+                            <!--<sup>%</sup>--></span>
+                        <p>Уровень самоотдачи</p>
+                    </li>
+                    <li class="quality-item"><span>100
+                            <!--<sup>%</sup>--></span>
+                        <p>Соблюдение сроков</p>
+                    </li>
+                    <li class="quality-item"><span>50
+                            <!--<sup>%</sup>--></span>
+                        <p>Минимальная предоплата</p>
+                    </li>
                 </ul>
             </article>
-         </section>
-         <section class="our-projects">
+        </div>
+        <section class="our-projects">
              <ul class="our-projects-list">
                 <li class="our-projects-item"><a href=""><img src="img/logo-1.png" class="our-projects-img" alt="html academy"></a></li>
                 <li class="our-projects-item"><a href=""><img src="img/logo-2.png" class="our-projects-img" alt="Borodinski"></a></li>
                 <li class="our-projects-item"><a href=""><img src="img/logo-3.png" class="our-projects-img" alt="Pink"></a></li>
                 <li class="our-projects-item"><a href=""><img src="img/logo-4.png" class="our-projects-img" alt="Mishka"></a></li>
              </ul>
-         </section>
+        </section>
     </main>
     <footer class="main-footer">
         <section class="our-map">
+            <div class="our-contacts-wrapper">
             <div class="our-contacts">
                 <h3>nerds design studio</h3>
                 <br>
@@ -148,10 +148,11 @@
                 <button class="write-us">напишите нам
                 </button>
             </div>
+            </div>
             <img class="map-img" src="" alt="карта">
         </section>
-        <section>
-            <form class="visual-hidden write-us-form">
+        <section class=" visual-hidden wrapper-form">
+            <form class=" write-us-form">
                 <h2>Напишите нам</h2>
                 <p class="get-info">
                     <label for="user-name">Ваше имя:</label>
@@ -173,8 +174,9 @@
                 </button><!--закрыть окно-->
             </form>
         </section>
-        <div class="footer-social">
-            <ul>
+        <section class="footer-social">
+            <div class="social-wrapper">
+            <ul class="social-button-list">
                 <li>
                     <a class="social-button" href="#">
                         <span class="visually-hidden">Вконтакте</span>
@@ -202,9 +204,12 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        <h2 class="proposition">Давайте дружить, это выгодно!</h2>
-        <p class="discounts">Скидка 10% для друзей из социальных сетей.</p>
+            <div class="our-deal">
+                <h2 class="proposition">Давайте дружить, это выгодно!</h2>
+                <p class="discounts">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
