@@ -311,23 +311,25 @@ a {
 
     border: 1px solid;
 }
-.site-navigation {
+.sectionalize {
     display: flex;
     width: 440px;
     justify-content: space-between;
 
     border: 1px solid;
 }
-.basket {
+.basket{
     width: 115px;
-
     border: 1px solid;
+}
+.img-basket {
+    margin-right: 18px;
 }
 /*Слайдер*/
 .slider{
-    display: flex;
-    align-items: center;
-    height: 430px;
+    padding-top: 85px;
+    padding-bottom: 80px;
+
 }
 .slider-list {
     list-style: none;
@@ -452,12 +454,13 @@ a {
 /*страница католог*/
 /*хедер*/
 .template-store {
-    display: flex;
-    height: 240px;
-    justify-content: center;
-    align-items: center;
+    padding-top: 85px;
+    padding-bottom: 120px;
+    text-align: center;
+
     border: 1px solid;
     margin-bottom: 60px;
+
 }
 /*боди*/
 .our-catalog {
