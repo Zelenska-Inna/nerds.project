@@ -15,7 +15,11 @@ a {
     text-decoration: none; /* убираем подчоркивание*/
     text-transform: uppercase;  /* все ссылки большыми буквами*/
 }
-.visual-hidden {
+img {
+    max-width: 100%;
+    height: auto;
+}
+.visually-hidden {
     display: none;
 }
 .main-header {
@@ -38,11 +42,17 @@ a {
 .active-link { 
     border-bottom: #fb565a 2px solid;
 }
-/* изменение состояния лого - не рабочий*/
+.header-logo {
+    width: 160px;
+    height: 65px;
+}
+/* изменение состояния лого*/
+.header-logo:hover path,
+.header-logo:focus path {
+    opacity: 0.8;
+}
 .header-logo:active {
-    stroke: #a6a6a6;
-    fill: #a6a6a6;
-
+    opacity: 0.3;
 }
 /* загаловок*/
 .tagline {
@@ -51,14 +61,16 @@ a {
     font-weight: 500;
     color: #000000;
 }
-/*кнопки похожие на ссылки*/
+/*ссылки похожие на кнопки  */
 .button-main {
-    vertical-align: middle;
-    text-align: center;
+    vertical-align: middle; 
+    text-align: center; 
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
     background-color:#fb565a;
+    border-radius: 2%;
+    display: inline-block;
 }
 .button-main:hover,
 .button-main:focus {
@@ -123,23 +135,10 @@ a {
     line-height: 45px;
     color: black;  
 }
-/* .quality-item{
-       font-weight: 400;
-       font-size: 16px;
-       line-height: 18px;
-} */
-/* изменение состояния логотипов*/
-.our-projects-img {
-   
-}
-.our-projects-img:hover,
-.our-projects-img:focus {
 
-}
 /*каталог*/
 .template-store {
     background-color: #eeeeee;
-
 }
 .filter {
     text-transform: uppercase;
@@ -256,6 +255,7 @@ a {
 .our-contacts {
     background-color: white;
 }
+/*ФУТЕР верхний*/
 /*контакты*/
 .our-contacts h3 {
     color: #000000;
@@ -279,13 +279,16 @@ a {
     color: #ffffff;
     background-color: #fb565a;
     border: none;
+    display: inline-block;
+    border-radius: 2%;
 }
- /*футер в самом низу*/
+ /*ФУТЕР нижний*/
 .proposition {
     color: black;
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 10px;
 }
 .discounts {
     font-weight: 400;
@@ -293,49 +296,76 @@ a {
 }
 
 /*СЕТКА*/
+/* Хедер*/
 .container {
     width: 1200px;
     /*шырина блока*/
     margin: 0 auto;
     /*оцентровка*/
     padding: 0 20px;
-
+    /*что бы блоки не слипались*/
 }
-/* Хедер*/
-
 .main-navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center; /*вертикальне вирівнюв ання*/
+    align-items: center; 
     padding: 50px 0 0 0;
-
-    border: 1px solid;
+}
+.our-projects-item:hover,
+.our-projects-item:focus {
+    opacity: 1;
+}
+.our-projects-item:active {
+    opacity: 0.1;
 }
 .sectionalize {
     display: flex;
     width: 440px;
     justify-content: space-between;
-
-    border: 1px solid;
+    flex-wrap: wrap;
 }
-.basket{
-    width: 115px;
-    border: 1px solid;
+.site-navigation a {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.basket {
+    max-width: 116px;/*что бы блок ужимался под контент*/
 }
 .img-basket {
-    margin-right: 18px;
+    position: relative;
+    padding-left: 40px;
 }
+.img-basket::before {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 /*Слайдер*/
-.slider{
+.slider {
     padding-top: 85px;
     padding-bottom: 80px;
-
 }
 .slider-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    border: 1px solid;
+}
+.tagline {
+    margin-bottom: 25px;
+}
+.text-list {
+    margin-bottom: 40px;
+}
+.size-slider-button {
+    padding: 16px 54px;
 }
 /*ОСНОВНАЯ ЧАСТЬ*/ 
 /*специализация*/
@@ -347,36 +377,74 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 510px;
-    border: 1px solid;
+
     border-bottom: 2px solid #eeeeee;
 }
 .service {
     width: 300px; /*ширина одного блочка*/
     list-style: none;
 }
-
+.service img {
+    margin-bottom: 30px;
+}
+.service h3 {
+    margin-bottom: 20px;
+}
+.service p {
+    margin-bottom: 20px;
+}
+.size-service-button  {
+    padding: 16px 40px;
+    }
 /*о нас*/
 .about-us-wrapper {
-    margin-bottom: 75px;
+    margin-bottom: 72px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
-    border: 1px solid;
 }
 .about-us {
     width: 665px;
 }
-.about-us-description {
+.about-us-headline {
+    margin-bottom: 30px;
+}
+ .main-description {
+    margin-bottom: 40px;
+ }
+.about-us-subtitle {
+    margin-bottom: 28px;
+}
+.list-description {
     list-style: none; /*убирает маркировку списка*/
     padding: 0;
     margin: 0;
+    margin-bottom: 28px;
 }
+.about-us-list :last-child {
+    margin-bottom: 0px;
+}
+.list-description::before {
+    content: " ";
+    display: inline-block;
+
+    background: #fb565a;
+    width: 25px;
+    height: 2px;
+    margin: 0px 11px 0px 1px ;
+    vertical-align: middle;
+     
+}
+/*блок с маленьким лого*/
 .quality {
     width: 360px;
 }
+.quality-img {
+    margin-bottom: 36px;
+}
 .quality-subtitle {
     text-align: center;
+    margin-bottom: 40px;
 }
 .quality-list {
     display: flex;
@@ -386,8 +454,19 @@ a {
     padding: 0;
 }
 .quality-item {
-    border: 1px solid;
+    
 }
+.quality-item span {
+    position: relative;
+    display: block;
+}
+.quality-item span::after {
+    position: absolute;
+    content: ' \0025';
+    font-size: 22.5px;
+    line-height: 22.5px;       
+}
+/*лого проектов*/
 .our-projects {
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
@@ -403,26 +482,33 @@ a {
     margin: 0;
 }
 .our-projects-item {
+    opacity:0.2;
     border-right: 2px solid #eeeeee;
 }
-/*ФУТЕР*/
-.our-map {
-    background-color: #dbdad4;
-}
-.our-contacts-wrapper {
-    width: 1200px;
-    height: 416px;
 
-    margin: 0 auto;
-    padding: 0 20px;
-    
+.our-projects-item:hover,
+.our-projects-item:focus {
+    opacity: 1;
+}
+.our-projects-item:active {
+    opacity: 0.1;
+}
+/*ФУТЕР верхний*/
+/*карта и контакты*/
+.our-map {
     display: flex;
-    align-items: center;
+    margin: 0 auto;
+    height: 416px;
+    width: 1440px;
+    position: relative;
 }
 .our-contacts {
+    position: absolute;
     width: 320px;
-    padding: 50px 0 50px 50px;
+    left: 140px;
+    top: 54px;
 
+    padding: 50px 0 50px 50px;
 }
 .our-contacts-list {
     display: list-item;
@@ -430,27 +516,59 @@ a {
     padding: 0;
     margin: 0;
 }
-/*ФУТЕР*/
+.size-contacts-button {
+    padding: 16px 50px;
 
+}
+.size-send-button {
+    padding: 16px 84px;
+}
+/*ФУТЕР нижний*/
 .social-wrapper {
-    border: 1px solid;
-
     display: flex;
     padding: 0 20px;
     width: 1200px;
-    height: 217px;
+    height: 218px;
     margin: 0 auto;
     align-items:center;
 }
 .social-button-list {
     display: flex;
-    width: 400px;
+    width: 260px;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
     list-style: none;
     padding: 0;
     margin: 0;
 }
+.social-button-item {
+    border-radius: 50%;
+    background-color: #e1e1e1;
+}
+.social-button-item:hover,
+.social-button-item:focus {
+    background-color: #e74246;
+}
+.social-button-item:active {
+    background-color: #d7373b;
+}
+.social-button-item:active path {
+    opacity: 0.3;
+}
+.social-button {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
 
+    /* background-color:#000; 
+    border-radius: 50%; */
+}
+.our-deal {
+    margin-left: 140px;
+}
 /*страница католог*/
 /*хедер*/
 .template-store {
@@ -458,9 +576,7 @@ a {
     padding-bottom: 120px;
     text-align: center;
 
-    border: 1px solid;
     margin-bottom: 60px;
-
 }
 /*боди*/
 .our-catalog {
@@ -471,8 +587,7 @@ a {
 .form-filters { /*первый основный блок*/
     display: flex;
     flex-direction: column;
-    width: 260px;
-    border: 1px solid;
+    width: 260px; 
 }
 
 .form-filters  ul {
@@ -480,9 +595,7 @@ a {
     padding: 0;
     margin: 0;
 }
-.part-form {
 
-}
 .retreat {
     margin-bottom: 60px;
 }
@@ -491,7 +604,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 760px;
-    border: 1px solid;
     
 }
 .site-filter { /*сортировать*/
