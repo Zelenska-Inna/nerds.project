@@ -20,7 +20,6 @@ img {
     height: auto;
 }
 /*ХЕДЕР*/
-
 .main-header {
     background-color: #eeeeee;
 }
@@ -231,9 +230,7 @@ img {
 }
 
 /*ссылки похожие на кнопки*/
-.button-main {
-    vertical-align: middle; 
-    text-align: center; 
+.button-main { 
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
@@ -285,15 +282,31 @@ img {
     margin-bottom: 80px;
 }
 .service {
+    box-sizing: border-box;
     width: 300px;/*ширина одного блочка*/
     margin-right: 100px;
     list-style: none;
 }
-.service img {
-    margin-bottom: 20px;
-    max-width: 300px;
+.service:last-child {
+    margin-right: 60px;
+}
+
+.img-laptop {
+    background-image: url(../img/illustration-1.png);
+    background-repeat: no-repeat;
+}
+.img-phone {
+    background-image: url(../img/illustration-2.png);
+    background-repeat: no-repeat;
+  
+}
+.img-presentation {
+    background-image: url(../img/illustration-3.png);
+    background-repeat: no-repeat;
+
 }
 .service h3 {
+    padding-top: 176px;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 30px;
@@ -380,33 +393,28 @@ img {
 }
 .quality-list {
     display: flex;
-    justify-content: space-between;
     list-style: none;
     padding: 0px;
 }
 .quality-item {
-    margin-right: 25px;
+    width: 107px;
+    margin-right: 10px;
+}
+.quality-item span {
+    display: block;
+    font-weight: 700;
+    font-size: 45px;
+    color: black;
+    margin-bottom: 28px;
+}
+.quality-item sup {
+    font-size: 22.5px;
+    vertical-align: middle;
 }
 .quality-list p {
     margin: 0px;
     line-height: 18px;
 }
-.quality-item span {
-    position: relative;
-    display: block;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 45px;
-    color: black;
-    margin-bottom: 20px;
-}
-.quality-item span::after {
-    position: absolute;
-    content: ' \0025';
-    font-size: 22.5px;
-    line-height: 22.5px;
-}
-
 /*нашы проекты*/
 .our-projects {
     margin-bottom: 70px;
@@ -460,30 +468,18 @@ position: relative;
 }
 
 /*ФУТЕР верхний*/
-/*карта и контакты*/
+/*карта*/
 .our-map {
     position: relative;
     height: 416px;
 }
-.point-img {
-    position: absolute;
-    top: 90px;
-    left: 820px;
-}
-.container-for-map {
-    width: 1160px;
-    padding: 0px 20px;
-    height: 416px;
-
-    position: absolute;
-    left: 50%;
-    margin-left: -600px;
-    top: 50%;
-    margin-top: -208px;
-    display: flex;
+.social-wrapper {
+    position: relative;
 }
 .our-contacts {
-    margin: auto 0;
+    z-index: 5;
+    position: absolute;
+    top: -165%;
     background-color: white;
     padding: 50px;
 }
@@ -524,8 +520,6 @@ position: relative;
     font: inherit;
     line-height: 18px;
     text-transform: uppercase;
-    vertical-align: middle;
-    text-align: center;
     font-weight: 500;
     box-sizing: border-box;
     color: #ffffff;
@@ -851,7 +845,6 @@ position: relative;
     margin-bottom: 13px;
 }
 .part-form ul {
-    /* position: relative; */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -862,7 +855,6 @@ position: relative;
     line-height: 20px;
     margin-bottom: 20px;
 }
-
 .grid li {
     padding-left: 36px;
 }
@@ -893,7 +885,6 @@ position: relative;
     background-color:#283136;
 }
 /*третий фильтр*/
-
 .features svg {
     position: absolute;
     top: -2px;
@@ -901,7 +892,6 @@ position: relative;
 .features  span {
     padding-left: 35px;
 }
-
 .features svg path {
     fill: #b8b8b8;
 }
@@ -909,7 +899,7 @@ position: relative;
     fill: #283136;
 }
 .features input:disabled~.unmarked path {
-     fill: #ededed;
+    fill: #ededed;
 }
 .marked {
     display: none;
@@ -928,14 +918,13 @@ position: relative;
 .button-show {
     font: inherit;
     text-transform: uppercase;
-    line-height: 18px;
-    border-radius: 2px;
     padding-top: 17px;
     padding-bottom: 17px;
 
     color: #000;
     background-color: #eeeeee;
     border: none;
+    border-radius: 2%;
 }
 .button-show:hover,
 .button-show:focus {
@@ -945,12 +934,8 @@ position: relative;
     color: #959595;
     background-color: #d5d5d5;
 }
-.numbering {
-    width: 50px;
-}
-.next-page {
-    padding-left: 80px;
-    padding-right: 80px;
+.button-show-size {
+width:100%
 }
 .list-button {
     display: flex;
@@ -959,14 +944,23 @@ position: relative;
     margin: 0;
 }
 .list-button li {
-    padding-right: 10px;
+    margin-right: 11px;
+}
+.number-page {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.next-page {
+    padding-left: 80px;
+    padding-right: 80px;
 }
 .active-page {
+    box-sizing: border-box;
+    border-color: #dbdbdb;
+    border-width: 3px;
+    border-style: solid;
     background-color: #fff;
-    box-sizing: padding-box;
-    border: 2px #dbdbdb solid;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 14px 17px;
 }
 
 /*второй основной блок*/
@@ -1061,16 +1055,13 @@ margin-bottom: 25px;
     line-height: 30px;
     color: #000;
 }
-
 .project-name:hover,
 .project-name:focus {
     color: #fb565a;
 }
-
 .project-name:active {
     color: #b2b2b2
 }
-
 .project-text {
     margin: 0px;
     padding: 0px;
@@ -1078,13 +1069,10 @@ margin-bottom: 25px;
     color: #666666;
     margin-bottom: 30px;
 }
-
 /*кнопка цены*/
 .our-price {
     font: inherit;
     text-transform: uppercase;
-    vertical-align: middle;
-    text-align: center;
     font-weight: 500;
     line-height: 18px;
     color: #ffffff;
@@ -1092,16 +1080,13 @@ margin-bottom: 25px;
     border: none;
     padding: 15px 60px;
 }
-
 .our-price:hover,
 .our-price:focus {
     background-color: #e74246;
 }
-
 .our-price:active {
     background-color: #d7373b;
 }
-
 .cut-down {
     display: none;
 }
